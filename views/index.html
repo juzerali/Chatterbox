@@ -5,19 +5,19 @@
 	<script src="/nowjs/now.js"></script>
 	<script type='text/javascript'>
 		$(document).ready(function(){
-
-		  now.receiveMessage = function(name, message){
-			$("#chatarea").append("<br>" + name + ": " + message);
-		  }
-
 		  $("#send-button").click(function(){
 			now.distributeMessage($("#msgbox").val());
 			$("#msgbox").val("");
 		  });
-
-		  now.name = prompt("What's your name?", "");
-
 		});
+		
+		now.ready(function(){
+			now.receiveMessage = function(name, message){
+				$("#chatarea").append("<br>" + name + ": " + message);
+			}
+			now.name = prompt("What's your name?", "");
+		});
+
 	</script>
   <TITLE> DLQ Chat </TITLE>
   <META NAME="Generator" CONTENT="EditPlus">
