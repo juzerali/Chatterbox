@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="/nowjs/now.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+
+		  now.receiveMessage = function(name, message){
+			$("#chatarea").append("<br>" + name + ": " + message);
+		  }
+
+		  $("#send-button").click(function(){
+			now.distributeMessage($("#msgbox").val());
+			$("#msgbox").val("");
+		  });
+
+		  now.name = prompt("What's your name?", "");
+
+		});
+	</script>
+  <TITLE> DLQ Chat </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+
+ </HEAD>
+
+ <BODY>
+  DLQ Chat
+
+  <div id='chatarea'>
+	<div>Hello User!! {{! ${now.name = prompt("Please enter your name.","Anonymous")}You can start chatting right away.</div>
+  </div>
+  <textarea id='msgbox'></textarea><input type='button' value='Send' id='send-button'/>
+  
+  <h6>Test sample page created by ${author}</h6>
+  
+ </BODY>
+</HTML>
