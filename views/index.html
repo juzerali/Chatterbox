@@ -14,6 +14,7 @@
 		now.ready(function(){
 			now.receiveMessage = function(name, message){
 				$("#chatarea").append("<br>" + name + ": " + message);
+				$('title').text(name + ": " + message);
 			}
 			now.name = prompt("What's your name?", "Anonymous");
 		});
