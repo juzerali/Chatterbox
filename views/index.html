@@ -25,7 +25,7 @@
 					$('title').text(name + ": " + message);
 				};
 				now.name = prompt("What's your name?", "Anonymous");
-				now.addName(now.name);
+				now.addName();
 				now.populateVisitors = function(visitors){
 					$.each(visitors, function(key,value){
 						$('#visitors').append(value);
