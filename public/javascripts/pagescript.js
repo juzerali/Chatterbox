@@ -1,7 +1,8 @@
 $(document).ready(function(){
 			now.ready(function(){
 				$("#send-button").click(function(){
-					now.distributeMessage($("#msgbox").val());
+					var msg = $("#msgbox").val();
+					if(!!msg) now.distributeMessage(msg);
 					$("#msgbox").val("");
 				});
 
@@ -15,7 +16,7 @@ $(document).ready(function(){
 					});
 				};
 				now.name = prompt("What's your name?", "Anonymous");
-				now.addName(now.name);
+				if(now.name) now.addName(now.name);
 				
 			});
 		});
