@@ -1,6 +1,6 @@
-var express = require('express')
-,	routes = require('./routes')
-,	visitors = [];
+var express = require('express');
+var	routes = require('./routes');
+var	visitors = [];
 
 var app = module.exports = express.createServer();
 
@@ -29,22 +29,23 @@ app.configure('production', function(){
 
 app.get('/', function(req,res){
 		res.render(__dirname + '/views/index.html', {author: "Juzer Ali"});
-	});
+});
 
 	
-app.listen(16464);
+app.listen(16472);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 
  var everyone = require("now").initialize(app);
  everyone.now.distributeMessage = function(message){
   everyone.now.receiveMessage(this.now.name, message);
-};
+};	
 
-everyone.now.addName = function(){
+everyone.now.addName = function(name){
 	var self = this;
-	var index = visitors.indexOf(self.name);
-	if(index >= 0) visitors.splice(index);
-	visitors.unshift(self.name);
+	console.log(name,self.name);
+	var index = visitors.indexOf(name);
+	if(index >= 0) visitors.splice(index,1);
+	visitors.unshift(name);
+	console.log(visitors)
 	everyone.now.populateVisitors(visitors);
 }
-	

@@ -12,29 +12,7 @@
 	</style>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script src="/nowjs/now.js"></script>
-	<script type='text/javascript'>
-		$(document).ready(function(){
-			now.ready(function(){
-				$("#send-button").click(function(){
-					now.distributeMessage($("#msgbox").val());
-					$("#msgbox").val("");
-				});
-
-				now.receiveMessage = function(name, message){
-					$("#chatarea").append("<br><b>" + name + "</b>: " + message);
-					$('title').text(name + ": " + message);
-				};
-				now.name = prompt("What's your name?", "Anonymous");
-				now.addName();
-				now.populateVisitors = function(visitors){
-					$.each(visitors, function(key,value){
-						$('#visitors').append(value);
-					});
-				};
-			});
-		});
-
-	</script>
+	<script type='text/javascript' src='/javascripts/pagescript.js'></script>
   <TITLE> DLQ Chat </TITLE>
   <META NAME="Generator" CONTENT="EditPlus">
   <META NAME="Author" CONTENT="">
