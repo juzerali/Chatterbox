@@ -32,7 +32,7 @@ app.get('/', function(req,res){
 });
 
 	
-app.listen(16472);
+app.listen(16464);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 
  var everyone = require("now").initialize(app);
@@ -42,10 +42,10 @@ console.log("Express server listening on port %d in %s mode", app.address().port
 
 everyone.now.addName = function(name){
 	var self = this;
-	console.log(name,self.name);
+	//console.log(name,self.name);
 	var index = visitors.indexOf(name);
 	if(index >= 0) visitors.splice(index,1);
 	visitors.unshift(name);
-	console.log(visitors)
+	//console.log(visitors)
 	everyone.now.populateVisitors(visitors);
 }
