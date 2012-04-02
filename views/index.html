@@ -25,6 +25,12 @@
 					$('title').text(name + ": " + message);
 				}
 				now.name = prompt("What's your name?", "Anonymous");
+				now.addName(name);
+				now.populateVisitors = function(visitors){
+					$.each(visitors, function(key,value){
+						$('#visitors').append(value);
+					}
+				}
 			});
 		});
 
@@ -45,7 +51,9 @@
 	<div>Hello User!! {{! ${now.name = prompt("Please enter your name.","Anonymous")}You can start chatting right away.</div>
   </div>
   <textarea id='msgbox'></textarea><input type='button' value='Send' id='send-button'/>
-  
+  <div id='visitors'>
+	Recent Visitors:<br/>
+  </div>
   <h6>Test sample page created by ${author}</h6>
   </div>
   

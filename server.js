@@ -1,5 +1,6 @@
-var express = require('express');
-  routes = require('./routes');
+var express = require('express')
+,	routes = require('./routes')
+,	visitors = [];
 
 var app = module.exports = express.createServer();
 
@@ -37,5 +38,11 @@ console.log("Express server listening on port %d in %s mode", app.address().port
  var everyone = require("now").initialize(app);
  everyone.now.distributeMessage = function(message){
   everyone.now.receiveMessage(this.now.name, message);
-};	
+};
+
+everyone.now.addName = function(name){
+	var index = visitors.indexOf(name);
+	if(index >= 0) visitors.splice(index);
+	visitors.unshift(name);
+}
 	
