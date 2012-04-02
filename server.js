@@ -44,5 +44,6 @@ everyone.now.addName = function(name){
 	var index = visitors.indexOf(name);
 	if(index >= 0) visitors.splice(index);
 	visitors.unshift(name);
+	everyone.now.populateVisitors(visitors);
 }
 	

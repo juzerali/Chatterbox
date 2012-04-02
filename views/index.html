@@ -23,14 +23,14 @@
 				now.receiveMessage = function(name, message){
 					$("#chatarea").append("<br><b>" + name + "</b>: " + message);
 					$('title').text(name + ": " + message);
-				}
+				};
 				now.name = prompt("What's your name?", "Anonymous");
 				now.addName(name);
 				now.populateVisitors = function(visitors){
 					$.each(visitors, function(key,value){
 						$('#visitors').append(value);
-					}
-				}
+					});
+				};
 			});
 		});
 
