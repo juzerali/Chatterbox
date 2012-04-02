@@ -1,22 +1,31 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
  <HEAD>
+	<style>
+		.center
+			{
+			margin-left:auto;
+			margin-right:auto;
+			width:70%;
+			background-color:#b0e0e6;
+			}
+	</style>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script src="/nowjs/now.js"></script>
 	<script type='text/javascript'>
 		$(document).ready(function(){
-		  $("#send-button").click(function(){
-			now.distributeMessage($("#msgbox").val());
-			$("#msgbox").val("");
-		  });
-		});
-		
-		now.ready(function(){
-			now.receiveMessage = function(name, message){
-				$("#chatarea").append("<br>" + name + ": " + message);
-				$('title').text(name + ": " + message);
-			}
-			now.name = prompt("What's your name?", "Anonymous");
+			now.ready(function(){
+				$("#send-button").click(function(){
+					now.distributeMessage($("#msgbox").val());
+					$("#msgbox").val("");
+				});
+
+				now.receiveMessage = function(name, message){
+					$("#chatarea").append("<br><b>" + name + "</b>: " + message);
+					$('title').text(name + ": " + message);
+				}
+				now.name = prompt("What's your name?", "Anonymous");
+			});
 		});
 
 	</script>
@@ -29,7 +38,8 @@
  </HEAD>
 
  <BODY>
-  DLQ Chat
+  <div class='center'>
+  <h3>DLQ Chat</h3>
 
   <div id='chatarea'>
 	<div>Hello User!! {{! ${now.name = prompt("Please enter your name.","Anonymous")}You can start chatting right away.</div>
@@ -37,6 +47,7 @@
   <textarea id='msgbox'></textarea><input type='button' value='Send' id='send-button'/>
   
   <h6>Test sample page created by ${author}</h6>
+  </div>
   
  </BODY>
 </HTML>
