@@ -1,0 +1,386 @@
+info it worked if it ends with ok
+verbose cli [ 'c:\\Program Files (x86)\\nodejs\\node.exe',
+verbose cli   'c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+verbose cli   'install',
+verbose cli   'now' ]
+info using npm@1.1.12
+info using node@v0.6.14
+verbose config file C:\Users\Juzer\.npmrc
+verbose config file c:\Program Files (x86)\nodejs\etc\npmrc
+verbose config file c:\Program Files (x86)\nodejs\node_modules\npm\npmrc
+verbose mkdir done: C:\Users\Juzer\AppData\Roaming\npm 755
+verbose mkdir done: d:\nodeyness\chatterbox 755
+verbose caching d:\nodeyness\chatterbox\package.json
+verbose loadDefaults application-name@0.0.1
+verbose caching d:\nodeyness\chatterbox\node_modules\express\package.json
+verbose caching d:\nodeyness\chatterbox\node_modules\everyauth\package.json
+verbose caching d:\nodeyness\chatterbox\node_modules\jqtpl\package.json
+verbose caching d:\nodeyness\chatterbox\node_modules\now\package.json
+verbose loadDefaults now@0.8.1
+verbose caching d:\nodeyness\chatterbox\node_modules\socket.io\package.json
+verbose from cache d:\nodeyness\chatterbox\package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'now', null ]
+silly cache add: name, spec, args [ undefined, 'now', [ 'now', null ] ]
+verbose parsed url { pathname: 'now', path: 'now', href: 'now' }
+verbose addNamed [ 'now', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'now', '', false ]
+verbose raw, before any munging now
+verbose url resolving [ 'https://registry.npmjs.org/', './now' ]
+verbose url resolved https://registry.npmjs.org/now
+verbose etag "2GIWNN2EHQYXU1FEYBHNKWXQX"
+http GET https://registry.npmjs.org/now
+http 304 https://registry.npmjs.org/now
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"2GIWNN2EHQYXU1FEYBHNKWXQX"',
+silly get cb     date: 'Wed, 04 Apr 2012 20:16:02 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag now from cache
+verbose mkdir done: C:\Users\Juzer\AppData\Roaming\npm-cache\now 755
+silly name, range, hasData 2 [ 'now', '', true ]
+silly versions [ 'now',
+silly versions   [ '0.2.0',
+silly versions     '0.2.1',
+silly versions     '0.2.2',
+silly versions     '0.2.3',
+silly versions     '0.2.4',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.3.2',
+silly versions     '0.5.0',
+silly versions     '0.5.1',
+silly versions     '0.5.2',
+silly versions     '0.5.3',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.7.0',
+silly versions     '0.7.1',
+silly versions     '0.7.2',
+silly versions     '0.7.3',
+silly versions     '0.7.4',
+silly versions     '0.7.5',
+silly versions     '0.7.6',
+silly versions     '0.8.0',
+silly versions     '0.8.1' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: 'e93365a16a405f8d9eace01c6461161e2f54d710',
+verbose bin dist     tarball: 'http://registry.npmjs.org/now/-/now-0.8.1.tgz' } ]
+verbose caching C:\Users\Juzer\AppData\Roaming\npm-cache\now\0.8.1\package\package.json
+verbose loadDefaults now@0.8.1
+silly resolved [ { author: { name: 'Flotype' },
+silly resolved     name: 'now',
+silly resolved     description: 'NowJS: An easy to use real-time RPC library',
+silly resolved     version: '0.8.1',
+silly resolved     repository: { type: 'git', url: 'git://github.com/Flotype/now.git' },
+silly resolved     main: 'lib/server.js',
+silly resolved     engines: { node: '>= v0.4.0' },
+silly resolved     dependencies: { 'socket.io': '>= 0.8.7', 'node-proxy': '>= 0.4.0' },
+silly resolved     devDependencies: {},
+silly resolved     _id: 'now@0.8.1',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.12',
+silly resolved     _nodeVersion: 'v0.6.14',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'now',
+silly resolved     scripts: {} } ]
+info into d:\nodeyness\chatterbox now@0.8.1
+info installOne now@0.8.1
+verbose from cache C:\Users\Juzer\AppData\Roaming\npm-cache\now\0.8.1\package\package.json
+info unbuild d:\nodeyness\chatterbox\node_modules\now
+verbose from cache d:\nodeyness\chatterbox\node_modules\now\package.json
+info preuninstall now@0.8.1
+info uninstall now@0.8.1
+verbose unbuild now@0.8.1 [ true,
+verbose unbuild now@0.8.1   'd:\\nodeyness\\chatterbox\\node_modules',
+verbose unbuild now@0.8.1   'd:\\nodeyness\\chatterbox\\node_modules' ]
+info postuninstall now@0.8.1
+verbose mkdir (expected) error ENOENT, stat 'd:\nodeyness\chatterbox\node_modules\now'
+verbose mkdir done: d:\nodeyness\chatterbox\node_modules\now 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget d:\nodeyness\chatterbox\node_modules\now
+silly gunzTarPerm modes [ '755', '644' ]
+silly modified mode [ '.npmignore', 438, 420 ]
+silly modified mode [ 'bin/', 438, 493 ]
+silly modified mode [ 'bin/build.js', 438, 420 ]
+silly modified mode [ 'changelog.md', 438, 420 ]
+silly modified mode [ 'dist/', 438, 493 ]
+silly modified mode [ 'dist/now.js', 438, 420 ]
+silly modified mode [ 'doc/', 438, 493 ]
+silly modified mode [ 'doc/jsdoc/', 438, 493 ]
+silly modified mode [ 'doc/jsdoc/files.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/index.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/', 438, 493 ]
+silly modified mode [ 'doc/jsdoc/symbols/Group#now.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/Group.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/nowjs.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/', 438, 493 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/flotype_now_lib_fileServer.js.html',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/flotype_now_lib_function.js.html',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/flotype_now_lib_group.js.html',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/flotype_now_lib_handlers.js.html',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/flotype_now_lib_now.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/flotype_now_lib_nowUtil.js.html',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/flotype_now_lib_proxy.js.html',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/flotype_now_lib_scopeTable.js.html',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/flotype_now_lib_server.js.html',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/flotype_now_lib_support.js.html',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/flotype_now_lib_user.js.html',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/now_lib_fileServer.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/now_lib_function.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/now_lib_group.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/now_lib_handlers.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/now_lib_now.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/now_lib_nowUtil.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/now_lib_proxy.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/now_lib_scopeTable.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/now_lib_server.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/now_lib_support.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/src/now_lib_user.js.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/User#now.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/User#user.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/User.html', 438, 420 ]
+silly modified mode [ 'doc/jsdoc/symbols/_global_.html', 438, 420 ]
+silly modified mode [ 'doc/public/', 438, 493 ]
+silly modified mode [ 'doc/public/best_practices.md', 438, 420 ]
+silly modified mode [ 'doc/public/company.md', 438, 420 ]
+silly modified mode [ 'doc/public/getting_started.md', 438, 420 ]
+silly modified mode [ 'doc/public/jobs.md', 438, 420 ]
+silly modified mode [ 'doc/public/user_manual.md', 438, 420 ]
+silly modified mode [ 'examples/', 438, 493 ]
+silly modified mode [ 'examples/express_example/', 438, 493 ]
+silly modified mode [ 'examples/express_example/app.js', 438, 420 ]
+silly modified mode [ 'examples/express_example/views/', 438, 493 ]
+silly modified mode [ 'examples/express_example/views/chat.ejs', 438, 420 ]
+silly modified mode [ 'examples/express_example/views/index.ejs', 438, 420 ]
+silly modified mode [ 'examples/express_example/views/layout.ejs', 438, 420 ]
+silly modified mode [ 'examples/helloworld_example/', 438, 493 ]
+silly modified mode [ 'examples/helloworld_example/helloworld.html', 438, 420 ]
+silly modified mode [ 'examples/helloworld_example/helloworld_server.js', 438, 420 ]
+silly modified mode [ 'examples/multiroomchat_example/', 438, 493 ]
+silly modified mode [ 'examples/multiroomchat_example/multiroomchat.html', 438, 420 ]
+silly modified mode [ 'examples/multiroomchat_example/multiroomchat_server.js',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'examples/nodeclient_example/', 438, 493 ]
+silly modified mode [ 'examples/nodeclient_example/chat.js', 438, 420 ]
+silly modified mode [ 'examples/nodeclient_example/index.html', 438, 420 ]
+silly modified mode [ 'examples/nodeclient_example/server.js', 438, 420 ]
+silly modified mode [ 'lib/', 438, 493 ]
+silly modified mode [ 'lib/client/', 438, 493 ]
+silly modified mode [ 'lib/client/now.js', 438, 420 ]
+silly modified mode [ 'lib/fileServer.js', 438, 420 ]
+silly modified mode [ 'lib/function.js', 438, 420 ]
+silly modified mode [ 'lib/group.js', 438, 420 ]
+silly modified mode [ 'lib/handlers.js', 438, 420 ]
+silly modified mode [ 'lib/nodeclient/', 438, 493 ]
+silly modified mode [ 'lib/nodeclient/now.js', 438, 420 ]
+silly modified mode [ 'lib/now.js', 438, 420 ]
+silly modified mode [ 'lib/nowUtil.js', 438, 420 ]
+silly modified mode [ 'lib/proxy.js', 438, 420 ]
+silly modified mode [ 'lib/scopeTable.js', 438, 420 ]
+silly modified mode [ 'lib/server.js', 438, 420 ]
+silly modified mode [ 'lib/support.js', 438, 420 ]
+silly modified mode [ 'lib/user.js', 438, 420 ]
+silly modified mode [ 'LICENSE', 438, 420 ]
+silly modified mode [ 'Makefile', 438, 420 ]
+silly modified mode [ 'package.json', 438, 420 ]
+silly modified mode [ 'readme.md', 438, 420 ]
+verbose gunzed d:\nodeyness\chatterbox\node_modules\now
+verbose caching d:\nodeyness\chatterbox\node_modules\now\package.json
+verbose loadDefaults now@0.8.1
+info preinstall now@0.8.1
+verbose from cache d:\nodeyness\chatterbox\node_modules\now\package.json
+verbose readDependencies: using package.json deps
+verbose from cache d:\nodeyness\chatterbox\node_modules\now\package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'node-proxy@>= 0.4.0', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'node-proxy@>= 0.4.0',
+silly cache add: name, spec, args   [ 'node-proxy@>= 0.4.0', null ] ]
+verbose parsed url { pathname: 'node-proxy@',
+verbose parsed url   path: 'node-proxy@',
+verbose parsed url   href: 'node-proxy@' }
+silly cache add: name, spec, args [ 'node-proxy', '>= 0.4.0', [ 'node-proxy', '>= 0.4.0' ] ]
+verbose parsed url { pathname: '=', path: '=', href: '=' }
+verbose addNamed [ 'node-proxy', '>= 0.4.0' ]
+verbose addNamed [ null, '>=0.4.0' ]
+silly name, range, hasData [ 'node-proxy', '>=0.4.0', false ]
+verbose raw, before any munging node-proxy
+verbose url resolving [ 'https://registry.npmjs.org/', './node-proxy' ]
+verbose url resolved https://registry.npmjs.org/node-proxy
+verbose etag "CUEZRTAP62HPU3HIVCZU6Z35K"
+http GET https://registry.npmjs.org/node-proxy
+http 304 https://registry.npmjs.org/node-proxy
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"CUEZRTAP62HPU3HIVCZU6Z35K"',
+silly get cb     date: 'Wed, 04 Apr 2012 20:16:07 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag node-proxy from cache
+verbose mkdir done: C:\Users\Juzer\AppData\Roaming\npm-cache\node-proxy 755
+silly name, range, hasData 2 [ 'node-proxy', '>=0.4.0', true ]
+silly versions [ 'node-proxy',
+silly versions   [ '0.3.1', '0.3.2', '0.4.0', '0.5.0', '0.5.1', '0.5.2' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-win32-ia32-6.1.7601',
+verbose bin dist   { shasum: 'c22cc7ddf8c2af0bfa32fed30d3c533b216ef893',
+verbose bin dist     tarball: 'http://registry.npmjs.org/node-proxy/-/node-proxy-0.5.2.tgz' } ]
+verbose caching C:\Users\Juzer\AppData\Roaming\npm-cache\node-proxy\0.5.2\package\package.json
+verbose loadDefaults node-proxy@0.5.2
+silly resolved [ { name: 'node-proxy',
+silly resolved     version: '0.5.2',
+silly resolved     description: 'A module for node implementing __noSuchMethod__-type handlers, such as object overloading, as part of the Harmony Catch-All Proxies specification found at http://wiki.ecmascript.org/doku.php?id=harmony:proxies',
+silly resolved     keywords: [ 'interceptor', 'proxy', 'overload', '__noSuchMethod__' ],
+silly resolved     contributors: 
+silly resolved      [ { name: 'Sam Shull',
+silly resolved          email: 'http://www.google.com/profiles/brickysam26' },
+silly resolved        { name: 'richardms', email: 'https://github.com/richardms' } ],
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://www.opensource.org/licenses/mit-license.html' } ],
+silly resolved     bugs: { url: 'http://github.com/samshull/node-proxy/issues' },
+silly resolved     implements: [ 'http://wiki.ecmascript.org/doku.php?id=harmony:proxies' ],
+silly resolved     engines: { node: '>=0.1.103' },
+silly resolved     repositories: [ { type: 'git', url: 'http://github.com/samshull/node-proxy' } ],
+silly resolved     main: './lib/node-proxy.node',
+silly resolved     scripts: { install: 'make' },
+silly resolved     _id: 'node-proxy@0.5.2',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.12',
+silly resolved     _nodeVersion: 'v0.6.14',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'node-proxy@>= 0.4.0' } ]
+info into d:\nodeyness\chatterbox\node_modules\now node-proxy@0.5.2
+info installOne node-proxy@0.5.2
+verbose from cache C:\Users\Juzer\AppData\Roaming\npm-cache\node-proxy\0.5.2\package\package.json
+info unbuild d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy
+verbose mkdir (expected) error ENOENT, stat 'd:\nodeyness\chatterbox\node_modules\now\node_modules'
+verbose mkdir (expected) error ENOENT, stat 'd:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy'
+verbose mkdir done: d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy
+silly gunzTarPerm modes [ '755', '644' ]
+silly modified mode [ '.npmignore', 438, 420 ]
+silly modified mode [ 'examples/', 438, 493 ]
+silly modified mode [ 'examples/autoload-namespace/', 438, 493 ]
+silly modified mode [ 'examples/autoload-namespace/autoload-namespace.js', 438, 420 ]
+silly modified mode [ 'examples/autoload-namespace/autoload-test.js', 438, 420 ]
+silly modified mode [ 'examples/autoload-namespace/org/', 438, 493 ]
+silly modified mode [ 'examples/autoload-namespace/org/w3c/', 438, 493 ]
+silly modified mode [ 'examples/autoload-namespace/org/w3c/DOM/', 438, 493 ]
+silly modified mode [ 'examples/autoload-namespace/org/w3c/DOM/Document/', 438, 493 ]
+silly modified mode [ 'examples/autoload-namespace/org/w3c/DOM/Document/String/',
+silly modified mode   438,
+silly modified mode   493 ]
+silly modified mode [ 'examples/autoload-namespace/org/w3c/DOM/Document/String/Test.js',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'examples/autoload-namespace/org/w3c/DOM/Document.js',
+silly modified mode   438,
+silly modified mode   420 ]
+silly modified mode [ 'lib/', 438, 493 ]
+silly modified mode [ 'lib/.npmignore', 438, 420 ]
+silly modified mode [ 'LICENSE.txt', 438, 420 ]
+silly modified mode [ 'Makefile', 438, 420 ]
+silly modified mode [ 'package.json', 438, 420 ]
+silly modified mode [ 'README.txt', 438, 420 ]
+silly modified mode [ 'remove_scope_close.diff', 438, 420 ]
+silly modified mode [ 'src/', 438, 493 ]
+silly modified mode [ 'src/build/', 438, 493 ]
+silly modified mode [ 'src/build/.wafpickle-7', 438, 420 ]
+silly modified mode [ 'src/node-proxy.cc', 438, 420 ]
+silly modified mode [ 'src/node-proxy.h', 438, 420 ]
+silly modified mode [ 'src/wscript', 438, 420 ]
+silly modified mode [ 'test/', 438, 493 ]
+silly modified mode [ 'test/test.js', 438, 420 ]
+verbose gunzed d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy
+verbose caching d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy\package.json
+verbose loadDefaults node-proxy@0.5.2
+info preinstall node-proxy@0.5.2
+verbose from cache d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy\package.json
+verbose readDependencies: using package.json deps
+verbose from cache d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy\package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy
+info build d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy
+verbose from cache d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy\package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   'd:\\nodeyness\\chatterbox\\node_modules\\now\\node_modules' ]
+info linkStuff node-proxy@0.5.2
+verbose linkBins node-proxy@0.5.2
+verbose linkMans node-proxy@0.5.2
+verbose rebuildBundles node-proxy@0.5.2
+info install node-proxy@0.5.2
+verbose unsafe-perm in lifecycle true
+silly exec cmd "/c" "make"
+silly spawning [ 'cmd',
+silly spawning   [ '/c', 'make' ],
+silly spawning   'd:\\nodeyness\\chatterbox\\node_modules\\now\\node_modules\\node-proxy' ]
+info node-proxy@0.5.2 Failed to exec install script
+info unbuild d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy
+verbose from cache d:\nodeyness\chatterbox\node_modules\now\node_modules\node-proxy\package.json
+info preuninstall node-proxy@0.5.2
+info uninstall node-proxy@0.5.2
+verbose unbuild node-proxy@0.5.2 [ false,
+verbose unbuild node-proxy@0.5.2   'd:\\nodeyness\\chatterbox\\node_modules',
+verbose unbuild node-proxy@0.5.2   'd:\\nodeyness\\chatterbox\\node_modules\\now\\node_modules' ]
+info postuninstall node-proxy@0.5.2
+verbose about to build d:\nodeyness\chatterbox\node_modules\now
+info unbuild d:\nodeyness\chatterbox\node_modules\now
+verbose from cache d:\nodeyness\chatterbox\node_modules\now\package.json
+info preuninstall now@0.8.1
+info uninstall now@0.8.1
+verbose unbuild now@0.8.1 [ true,
+verbose unbuild now@0.8.1   'd:\\nodeyness\\chatterbox\\node_modules',
+verbose unbuild now@0.8.1   'd:\\nodeyness\\chatterbox\\node_modules' ]
+info postuninstall now@0.8.1
+ERR! node-proxy@0.5.2 install: `make`
+ERR! `cmd "/c" "make"` failed with 1
+ERR! 
+ERR! Failed at the node-proxy@0.5.2 install script.
+ERR! This is most likely a problem with the node-proxy package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     make
+ERR! You can get their info via:
+ERR!     npm owner ls node-proxy
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Windows_NT 6.1.7601
+ERR! command "c:\\Program Files (x86)\\nodejs\\node.exe" "c:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "now"
+ERR! cwd d:\nodeyness\chatterbox
+ERR! node -v v0.6.14
+ERR! npm -v 1.1.12
+ERR! code ELIFECYCLE
+ERR! message node-proxy@0.5.2 install: `make`
+ERR! message `cmd "/c" "make"` failed with 1
+ERR! errno {}
+verbose exit [ 1, true ]
