@@ -40,6 +40,7 @@ console.log("Express server listening on port %d in %s mode", app.address().port
   everyone.now.receiveMessage(this.now.name, message);
 };	
 
+
 everyone.now.addName = function(name){
 	var self = this;
 	//console.log(name,self.name);
@@ -49,3 +50,4 @@ everyone.now.addName = function(name){
 	//console.log(visitors)
 	everyone.now.populateVisitors(visitors);
 }
+
