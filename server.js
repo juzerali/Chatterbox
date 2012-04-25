@@ -33,7 +33,7 @@ app.get('/', function(req,res){
 app.listen(process.env['app_port'] || 8080);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 
- var everyone = require("now").initialize(app, {transports: ['xhr-polling', 'jsonp-polling', 'htmlfile']}});
+ var everyone = require("now").initialize(app, {socketio: {transports: ['xhr-polling', 'jsonp-polling', 'htmlfile']}});
 
  
  everyone.now.distributeMessage = function(message){
